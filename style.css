@@ -180,6 +180,9 @@ span{
     transition: .7s;
     scrollbar-width: none;
     -ms-overflow-style: none; 
+    object-fit: cover;
+    height: 340px;
+    width: calc(100%/1.1);
     
 }
 .image::-webkit-scrollbar {
