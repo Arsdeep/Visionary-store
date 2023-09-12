@@ -184,6 +184,7 @@ span{
     object-fit: cover;
     height: 200px;
     width: calc(100%/1.1);
+    overflow-y: hidden;
     
 }
 .image::-webkit-scrollbar {
