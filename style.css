@@ -178,6 +178,9 @@ span{
     transition: .7s;
     scrollbar-width: none;
     -ms-overflow-style: none; 
+    object-fit: cover;
+    object-position: center;
+
 }
 .image::-webkit-scrollbar {
     display: none;
@@ -189,6 +192,8 @@ span{
     object-position: center;
     -o-object-fit: cover;
     -o-object-position: center;
+    height: fit-content;
+    width: fit-content;
    
 }
 #title {
