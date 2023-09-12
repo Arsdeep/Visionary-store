@@ -112,6 +112,10 @@ data.forEach(function (elem) {
         <img src="${elem.image1}">
         
         <img src="${elem.image2}">
+        <video id="gt" width="320" height="240" controls>
+        <source src="gt.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
        
     </div>
     <label for="${elem.id}" id="title">${elem.name}<span>&#x3e;</span></label>
@@ -140,6 +144,8 @@ let all = document.getElementById("All");
 let account = document.getElementById("Acc");
 let service = document.getElementById("Srv");
 let event = document.getElementById("Evt");
+
+
 
 
 

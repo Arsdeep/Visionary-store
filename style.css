@@ -101,9 +101,10 @@ button{
 button:active{
     transform: scale(0.97);
     border-color: rgb(0, 255, 0);
+    color: green;
 }
-input[type="search"]{
-    height: 30px;
+input[type="text"]{
+    height: 9px;
     font-size: 1rem;
     width: 300px;
     border: none;
@@ -115,7 +116,7 @@ input[type="search"]{
     
 }
 
-input[type="search"]:focus{
+input[type="text"]:focus{
     border-color: rgb(0, 255, 0);
     outline: none;
     
@@ -492,8 +493,8 @@ footer img:hover {
         margin-top: 7vh;
     }
 
-    input[type="search"]{
-        width: 200px;
+    input[type="text"]{
+        width: 180px;
        
     }
     select{
