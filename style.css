@@ -175,12 +175,12 @@ span{
     border-radius: .7rem;
     display: flex;
     aspect-ratio: 16 / 9;
-    overflow-x: auto;
+    overflow: scroll;
     scroll-snap-type: x mandatory;
     transition: .7s;
     scrollbar-width: none;
     -ms-overflow-style: none; 
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 
 }
@@ -188,11 +188,12 @@ span{
     display: none;
   }
 .iamge img{
+    aspect-ratio: 4 / 3;
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    -o-object-fit: cover;
+    -o-object-fit: contain;
     -o-object-position: center;
     height: fit-content;
     width: fit-content;

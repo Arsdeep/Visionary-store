@@ -50,8 +50,11 @@ data.forEach(function(elem){
     clutter +=`
     <div class="project" data-aos="zoom-in">
     <div class="image">
+    
         <img src="${elem.image1}">
+        
         <img src="${elem.image2}">
+       
     </div>
     <label for="${elem.id}" id="title">${elem.name}<span>&#x3e;</span></label>
     <input type="checkbox" name="name" id="${elem.id}">
