@@ -101,7 +101,7 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: .3vh;
+    margin-top: 1vh;
 }
 
 .project {
@@ -262,7 +262,7 @@ footer img:hover {
 
 @media (max-width:800px) {
     .card {
-        margin-top: 10vh;
+        margin-top: 1vh;
     }
 
 }
