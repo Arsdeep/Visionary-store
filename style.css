@@ -186,6 +186,9 @@ span{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
    
 }
 #title {
