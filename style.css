@@ -128,6 +128,8 @@ select:focus{
 #priceRange{
     margin-left: -.1rem;
     margin-top: 33px;
+    cursor: pointer;
+    border-radius: 0px;
 }
 
 .price{
@@ -379,6 +381,29 @@ footer img:hover {
 @media (max-width:800px) {
     .card {
         margin-top: 7vh;
+    }
+
+    input[type="search"]{
+        width: 200px;
+       
+    }
+    select{
+        width: 19.5rem;
+        margin: 0px;
+    }
+
+    button{
+        width: 6.2rem;
+    }
+    .price{
+        margin: -1rem;
+    
+    }
+    #priceRange{
+        width: 13rem;
+        margin-right: 33px;
+        height: .3rem;
+        border-radius: 0px;  
     }
 
 }
