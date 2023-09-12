@@ -181,7 +181,7 @@ span{
     scrollbar-width: none;
     -ms-overflow-style: none; 
     object-fit: cover;
-    height: 340px;
+    height: 200px;
     width: calc(100%/1.1);
     
 }
