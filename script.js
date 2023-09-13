@@ -100,7 +100,7 @@ function show(elem){
     }  
  }
 
-document.getElementById("full").onclick = ()=> window.location.href=("#video")
+
  
 
 
