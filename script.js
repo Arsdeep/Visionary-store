@@ -251,7 +251,7 @@ function show(elem){
  
 load.onclick = () => {
 
-    n+=3
+    n+=5
    
     if(n>=data.length){
         load.style.display="none"
@@ -260,6 +260,7 @@ load.onclick = () => {
     }else{
         gta(data);
         load.style.display="block"
+        notfound.style.display="none"
     console.log(n)}
 }
  
@@ -267,11 +268,12 @@ load.onclick = () => {
 
 
  search.onkeyup = () =>{
+    notfound.style.display="none"
     if (search.value.replace(/\s+/g, '').length == 0){
         gta(data);
         notfound.style.display="none"
     }else{
-
+        notfound.style.display="none"
     
     let text = search.value.toUpperCase();
     console.log(text)
@@ -283,6 +285,7 @@ load.onclick = () => {
         }
     });
     if(this.value == ""){
+       
         show(data);
     }
     else {
