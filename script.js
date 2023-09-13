@@ -1,4 +1,4 @@
-
+let price = document.getElementById("priceRange");
 let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
@@ -14,7 +14,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'evt',
-        ammount: '₹ 3,499',
+        ammount: '4000',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -27,7 +27,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'srv',
-        ammount: '₹ 3,499',
+        ammount: '4000',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -39,7 +39,7 @@ let data = [
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
-        ammount: '₹ 3,499',
+        ammount: '4000',
         category: 'srv',
         status: 'ava',
         tyepeis:"buy",
@@ -52,7 +52,7 @@ let data = [
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
-        ammount: '₹ 3,499',
+        ammount: '4000',
         category: 'acc',
         status: 'ava',
         tyepeis:"join",
@@ -66,7 +66,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'acc',
-        ammount: '₹ 3,499',
+        ammount: '40',
         status: 'sold',
         tyepeis:"join",
         video:"gt.mp4",
@@ -79,7 +79,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'srv',
-        ammount: '₹ 3,499',
+        ammount: '40',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -92,7 +92,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'acc',
-        ammount: '₹ 3,499',
+        ammount: '40',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -105,7 +105,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'acc',
-        ammount: '₹ 3,499',
+        ammount: '3499',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -118,7 +118,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         category: 'acc',
-        ammount: '₹ 3,499',
+        ammount: '3499',
         status: 'ava',
         tyepeis:"buy",
         video:"x.mp4",
@@ -158,7 +158,7 @@ function acc(elem){
          <p id="${elem[i].category}"></p>
          <p id="${elem[i].status}"></p>
      </div>
-     <h3>₹ 3,499</h3>
+     <h3>₹ ${elem[i].ammount}</h3>
      <div id="buy">
      <button class="${elem[i].tyepeis}"
          onclick="window.open('${elem[i].link}')">
@@ -198,7 +198,7 @@ function gta(elem){
          <p id="${elem[i].category}"></p>
          <p id="${elem[i].status}"></p>
      </div>
-     <h3>₹ 3,499</h3>
+     <h3>₹ ${elem[i].ammount}</h3>
      <div id="buy">
      <button class="${elem[i].tyepeis}"
          onclick="window.open('${elem[i].link}')">
@@ -236,7 +236,7 @@ function show(elem){
          <p id="${elem[i].category}"></p>
          <p id="${elem[i].status}"></p>
      </div>
-     <h3>₹ 3,499</h3>
+     <h3>₹ ${elem[i].ammount}</h3>
      <div id="buy">
      <button class="${elem[i].tyepeis}"
          onclick="window.open('${elem[i].link}')">
@@ -256,7 +256,7 @@ load.onclick = () => {
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
-        gta(data);
+        
     }else{
         gta(data);
         load.style.display="block"
@@ -273,7 +273,7 @@ load.onclick = () => {
         gta(data);
         notfound.style.display="none"
         accdatas.style.display="none"
-        load.style.display="none"
+        load.style.display="block"
     }else{
         notfound.style.display="none"
         accdatas.style.display="none"
@@ -442,4 +442,20 @@ else {
 }
 }
 }
+
+price.onchange = () => console.log(price.value)
+
+
+
+
+low = data.sort(function(a,b){return a.ammount - b.ammount})
+
+high = data.sort(function(a,b){return b.ammount - a.ammount});
+console.log(high)
+
+console.log(high[0])
+
+console.log(low)
+
+console.log(low[0])
 
