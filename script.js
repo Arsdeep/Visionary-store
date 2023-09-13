@@ -266,8 +266,15 @@ load.onclick = () => {
 
 
  search.onkeyup = () =>{
-    let text = search.value.toUpperCase();
+    if (search.value.replace(/\s+/g, '').length == 0){
+        gta(data);
+        notfound.style.display="none"
+    }else{
+
     
+    let text = search.value.toUpperCase();
+    console.log(text)
+
     
     newdata = data.filter(function(a){
         if(a.name.includes(text)){
@@ -287,6 +294,7 @@ load.onclick = () => {
             show(newdata);
         }
     }
+}
 }
 
 document.getElementById('category').onchange = ()=>{
