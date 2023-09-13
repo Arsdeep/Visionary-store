@@ -251,14 +251,17 @@ function show(elem){
  }
 
 
-let j= 0
-
+let j= 500
+function gtx(){
+    j+=1000
+    window.scroll(0,`${j}`)
+}
  
 load.onclick = () => {
 
     n+=3
     
-    j+=500
+  
   console.log(j)
 
     if(n>=data.length){
@@ -268,7 +271,7 @@ load.onclick = () => {
     }else{
        
         gta(data);
-        window.scroll(0,`${j}`)
+        gtx()
         load.style.display="block"
         notfound.style.display="none"
     }
