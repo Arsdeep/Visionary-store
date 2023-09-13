@@ -3,7 +3,7 @@ let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
 let notfound = document.getElementById("notfound");
-let card = document.getElementById("body");
+let card = document.getElementById("card");
 
 let newdata = []
 let accdata = []
@@ -260,12 +260,13 @@ load.onclick = () => {
         notfound.style.display="none"
         
     }else{
-        gta(data);
        
+        gta(data);
+        card.scrollTop += 3000;
         console.log(card.scrollTop)
         load.style.display="block"
         notfound.style.display="none"
-    console.log(n)}
+    }
 }
  
 
