@@ -9,6 +9,8 @@ body {
     background-color: black;
 }
 
+
+
 .header {
 
     border-radius: 0px;
@@ -528,6 +530,10 @@ margin-top: 40px;
     height: 300px;
 }
 @media (max-width:800px) {
+    html,body{
+        -webkit-overflow-scrolling : touch !important;
+        overflow: auto !important;
+    }
     .card {
         margin-top: 7vh;
     }
