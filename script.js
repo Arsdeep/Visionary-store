@@ -129,6 +129,7 @@ let data = [
 ]
 
 
+
 let n=3;
 
 gta(data);
@@ -170,8 +171,8 @@ function acc(elem,idx){
      `
     }  
  }
+ 
 
-console.log(data)
 
 function gta(elem,idx){
     document.getElementById("card").innerText="";
@@ -249,20 +250,25 @@ function show(elem,idx){
     }  
  }
 
+ let j = 3
+
+
  
 load.onclick = () => {
 
     n+=3
-    window.location.href="#3"
+    
+    j+=3
+  
 
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
         gta(data);
     }else{
-       
+        
         gta(data);
-      
+        window.location.href=`#${j}` 
         load.style.display="block"
         notfound.style.display="none"
     }
