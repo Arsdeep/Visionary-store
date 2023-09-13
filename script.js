@@ -256,7 +256,7 @@ load.onclick = () => {
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
-        gta(data);
+        
     }else{
         gta(data);
         load.style.display="block"
@@ -273,7 +273,7 @@ load.onclick = () => {
         gta(data);
         notfound.style.display="none"
         accdatas.style.display="none"
-        load.style.display="none"
+        load.style.display="block"
     }else{
         notfound.style.display="none"
         accdatas.style.display="none"
