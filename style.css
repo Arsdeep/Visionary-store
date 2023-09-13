@@ -502,9 +502,30 @@ footer img:hover {
     display: flex;
     justify-content: center;
 margin-top: 40px;
+
     
 }
 
+#load{
+    border: none;
+}
+#accdata{
+    border: none;
+}
+
+.notfound{
+  
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+.notfound img{
+    opacity: 70%;
+    height: 300px;
+}
 @media (max-width:800px) {
     .card {
         margin-top: 7vh;

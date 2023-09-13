@@ -2,6 +2,7 @@
 let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
+let notfound = document.getElementById("notfound");
 
 let newdata = []
 let accdata = []
@@ -279,8 +280,10 @@ load.onclick = () => {
     else {
         if(newdata==""){
             document.getElementById("card").innerHTML="";
+            notfound.style.display="flex";
         }
         else{
+            notfound.style.display="none";
             show(newdata);
         }
     }
@@ -293,7 +296,7 @@ document.getElementById('category').onchange = ()=>{
 function category(){
 
     if(document.getElementById('category').value=="All"){
-        load.style.display="block"
+        load.style.display="flex"
         accdatas.style.display="none"
         n=3
         if(n>=data.length){
@@ -301,7 +304,7 @@ function category(){
             show(data);
         }else{
             show(data);
-            load.style.display="block"
+            load.style.display="flex"
         console.log(n)}
         gta(data);
     }
@@ -321,12 +324,14 @@ if(this.value == ""){
 else {
     if(newdata==""){
         document.getElementById("card").innerHTML="";
+        notfound.style.display="flex";
     }
     else{
+        notfound.style.display="none";
         accdata = newdata
        console.log(accdata.length)
        
-      accdatas.style.display="block"
+      accdatas.style.display="flex"
        accdatas.onclick = () => {
 
         n+=3
@@ -336,10 +341,11 @@ else {
             acc(accdata);
         }else{
             acc(accdata);
-            accdatas.style.display="block"
+            accdatas.style.display="flex"
         console.log(n)}
     }
     acc(accdata);
+     notfound.style.display="none";
      
       
     }
@@ -347,7 +353,7 @@ else {
 }
 
 if(document.getElementById('category').value=="Services"){
-    load.style.display="block"
+    load.style.display="flex"
     accdatas.style.display="none"
 let text = "srv";
 
@@ -363,6 +369,7 @@ if(this.value == ""){
 else {
     if(newdata==""){
         document.getElementById("card").innerHTML="";
+        notfound.style.display="flex";
     }
     else{
         n=newdata.length
@@ -371,15 +378,16 @@ else {
             show(newdata);
         }else{
             show(newdata);
-            load.style.display="block"
+            load.style.display="flex"
         console.log(n)}
         show(newdata);
+        notfound.style.display="none";
     }
 }
 }
 
 if(document.getElementById('category').value=="E-Sports"){
-    load.style.display="block"
+    load.style.display="flex"
     accdatas.style.display="none"
 let text = "evt"
 
@@ -396,6 +404,7 @@ if(this.value == ""){
 else {
     if(newdata==""){
         document.getElementById("card").innerHTML="";
+        notfound.style.display="flex";
     }
     else{
         n=newdata.length
@@ -404,9 +413,10 @@ else {
             show(newdata);
         }else{
             show(newdata);
-            load.style.display="block"
+            load.style.display="flex"
         console.log(n)}
         show(newdata);
+        notfound.style.display="none";
     }
 }
 }
