@@ -251,7 +251,7 @@ function show(elem){
  
 load.onclick = () => {
 
-    n+=5
+    n+=1
    
     if(n>=data.length){
         load.style.display="none"
@@ -318,9 +318,7 @@ function category(){
         if(n>=data.length){
             load.style.display="none"
             notfound.style.display="none"   
-            show(data);
         }else{
-            show(data);
             load.style.display="flex"
         console.log(n)}
         gta(data);
