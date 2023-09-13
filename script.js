@@ -1,9 +1,38 @@
 
 let search = document.getElementById("search");
+let load = document.getElementById("load");
+let accdatas = document.getElementById("accdata");
 
 let newdata = []
+let accdata = []
 
 let data = [
+    {
+        name: '📛MI POPULARITY💠',
+        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
+        image1: 'p.jpg',
+        image2: 'p3.jpg',
+        category: 'evt',
+        ammount: '₹ 3,499',
+        status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
+        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
+
+    },
+    {
+        name: '📛I POPULARITY💠',
+        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
+        image1: 'p.jpg',
+        image2: 'p3.jpg',
+        category: 'evt',
+        ammount: '₹ 3,499',
+        status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
+        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
+
+    },
     {
         name: '📛GGMI POPULARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
@@ -55,12 +84,130 @@ let data = [
         video:"x.mp4",
         link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
 
+    },
+    {
+        name: '📛BGMI POPULARITY💠',
+        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
+        image1: 'p.jpg',
+        image2: 'p3.jpg',
+        category: 'acc',
+        ammount: '₹ 3,499',
+        status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
+        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
+
+    },
+    {
+        name: '📛BGMI POPULARITY💠',
+        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
+        image1: 'p.jpg',
+        image2: 'p3.jpg',
+        category: 'acc',
+        ammount: '₹ 3,499',
+        status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
+        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
+
+    },
+    {
+        name: '📛BGMI POPULARITY💠',
+        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
+        image1: 'p.jpg',
+        image2: 'p3.jpg',
+        category: 'acc',
+        ammount: '₹ 3,499',
+        status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
+        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
+
     }
 ]
 
 
+let n=3;
 
-show(data);
+gta(data);
+
+function acc(elem){
+    document.getElementById("card").innerText="";
+    for ( let i=0; i<n; i++){
+     document.getElementById("card").innerHTML +=`
+     <div class="project" data-aos="zoom-in">
+   
+
+     <div class="image">
+    
+<img src="${elem[i].image1}">
+         <video preload="none" controls onclick="this.play()" poster="${elem[i].image1}" id="video">
+         <source src="${elem[i].video}" type="video/mp4">
+         Your browser does not support the video tag.
+       </video>
+        
+     </div>
+     <label for="${elem[i].name}" id="title">${elem[i].name}<span>&#x3e;</span></label>
+     <input type="checkbox" name="name" id="${elem[i].name}">
+     <div class="content">
+         <p id="des">${elem[i].description}</p>
+     </div>
+ 
+     <div class="tags">
+         <p id="${elem[i].category}"></p>
+         <p id="${elem[i].status}"></p>
+     </div>
+     <h3>₹ 3,499</h3>
+     <div id="buy">
+     <button class="${elem[i].tyepeis}"
+         onclick="window.open('${elem[i].link}')">
+         </div>
+     </button>
+     </div>
+
+     `
+    }  
+ }
+
+
+
+function gta(elem){
+    document.getElementById("card").innerText="";
+    for ( let i=0; i<n; i++){
+     document.getElementById("card").innerHTML +=`
+     <div class="project" data-aos="zoom-in">
+   
+
+     <div class="image">
+    
+<img src="${elem[i].image1}">
+         <video preload="none" controls onclick="this.play()" poster="${elem[i].image1}" id="video">
+         <source src="${elem[i].video}" type="video/mp4">
+         Your browser does not support the video tag.
+       </video>
+        
+     </div>
+     <label for="${elem[i].name}" id="title">${elem[i].name}<span>&#x3e;</span></label>
+     <input type="checkbox" name="name" id="${elem[i].name}">
+     <div class="content">
+         <p id="des">${elem[i].description}</p>
+     </div>
+ 
+     <div class="tags">
+         <p id="${elem[i].category}"></p>
+         <p id="${elem[i].status}"></p>
+     </div>
+     <h3>₹ 3,499</h3>
+     <div id="buy">
+     <button class="${elem[i].tyepeis}"
+         onclick="window.open('${elem[i].link}')">
+         </div>
+     </button>
+     </div>
+
+     `
+    }  
+ }
 
 function show(elem){
     document.getElementById("card").innerText="";
@@ -100,7 +247,19 @@ function show(elem){
     }  
  }
 
+ 
+load.onclick = () => {
 
+    n+=3
+   
+    if(n>=data.length){
+        load.style.display="none"
+        gta(data);
+    }else{
+        gta(data);
+        load.style.display="block"
+    console.log(n)}
+}
  
 
 
@@ -134,11 +293,22 @@ document.getElementById('category').onchange = ()=>{
 function category(){
 
     if(document.getElementById('category').value=="All"){
-        show(data);
+        load.style.display="block"
+        accdatas.style.display="none"
+        n=3
+        if(n>=data.length){
+            load.style.display="none"
+            show(data);
+        }else{
+            show(data);
+            load.style.display="block"
+        console.log(n)}
+        gta(data);
     }
     
 if(document.getElementById('category').value=="Accounts") {
 let text = "acc";
+load.style.display="none"
 
 newdata = data.filter(function(a){
     if(a.category.includes(text)){
@@ -153,12 +323,32 @@ else {
         document.getElementById("card").innerHTML="";
     }
     else{
-        show(newdata);
+        accdata = newdata
+       console.log(accdata.length)
+       
+      accdatas.style.display="block"
+       accdatas.onclick = () => {
+
+        n+=3
+       
+        if(n>=accdata.length){
+            accdatas.style.display="none"
+            acc(accdata);
+        }else{
+            acc(accdata);
+            accdatas.style.display="block"
+        console.log(n)}
+    }
+    acc(accdata);
+     
+      
     }
 }
 }
 
 if(document.getElementById('category').value=="Services"){
+    load.style.display="block"
+    accdatas.style.display="none"
 let text = "srv";
 
 
@@ -175,13 +365,24 @@ else {
         document.getElementById("card").innerHTML="";
     }
     else{
+        n=newdata.length
+        if(n>=newdata.length){
+            load.style.display="none"
+            show(newdata);
+        }else{
+            show(newdata);
+            load.style.display="block"
+        console.log(n)}
         show(newdata);
     }
 }
 }
 
 if(document.getElementById('category').value=="E-Sports"){
+    load.style.display="block"
+    accdatas.style.display="none"
 let text = "evt"
+
 
 
 newdata = data.filter(function(a){
@@ -197,6 +398,14 @@ else {
         document.getElementById("card").innerHTML="";
     }
     else{
+        n=newdata.length
+        if(n>=newdata.length){
+            load.style.display="none"
+            show(newdata);
+        }else{
+            show(newdata);
+            load.style.display="block"
+        console.log(n)}
         show(newdata);
     }
 }
