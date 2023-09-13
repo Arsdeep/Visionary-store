@@ -3,6 +3,7 @@ let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
 let notfound = document.getElementById("notfound");
+let card = document.getElementById("card");
 
 let newdata = []
 let accdata = []
@@ -74,7 +75,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛 POPULARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -87,7 +88,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛BGMI PULARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -100,7 +101,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛BGMI POARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -113,7 +114,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛BGI POPULAITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -132,11 +133,11 @@ let n=3;
 
 gta(data);
 
-function acc(elem){
+function acc(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in">
+     <div class="project" data-aos="zoom-in" id="${idx}">
    
 
      <div class="image">
@@ -172,11 +173,11 @@ function acc(elem){
 
 
 
-function gta(elem){
+function gta(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in">
+     <div class="project" data-aos="zoom-in" id="${idx}">
    
 
      <div class="image">
@@ -210,11 +211,11 @@ function gta(elem){
     }  
  }
 
-function show(elem){
+function show(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<elem.length; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in">
+     <div class="project" data-aos="zoom-in" id="${idx}">
    
 
      <div class="image">
@@ -252,13 +253,16 @@ function show(elem){
 load.onclick = () => {
 
     n+=1
-   
+    
+   window.location.href=`# + ${data.name}`
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
         
     }else{
         gta(data);
+       
+        console.log(card.scrollTop)
         load.style.display="block"
         notfound.style.display="none"
     console.log(n)}
@@ -449,11 +453,4 @@ price.onchange = () => console.log(price.value)
 low = data.sort(function(a,b){return a.ammount - b.ammount})
 
 high = data.sort(function(a,b){return b.ammount - a.ammount});
-console.log(high)
-
-console.log(high[0])
-
-console.log(low)
-
-console.log(low[0])
 
