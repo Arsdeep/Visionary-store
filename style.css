@@ -169,7 +169,7 @@ span{
 
 
 .image {
-    margin: 15px;
+    margin: 20px;
     border-radius: .7rem;
     display: flex;
     aspect-ratio: 16 / 9;
@@ -182,6 +182,7 @@ span{
     object-fit: cover;
     height: 150px;
     width: 300px;
+
     
 }
 .image::-webkit-scrollbar {
