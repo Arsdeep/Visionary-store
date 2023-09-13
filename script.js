@@ -252,13 +252,13 @@ function show(elem,idx){
  
 load.onclick = () => {
 
-    n+=1
+    n+=3
     window.location.href="#3"
 
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
-        
+        gta(data);
     }else{
        
         gta(data);
