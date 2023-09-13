@@ -134,7 +134,7 @@ let n=3;
 
 gta(data);
 
-function acc(elem,idx){
+function acc(elem){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
@@ -174,7 +174,7 @@ function acc(elem,idx){
  
 
 
-function gta(elem,idx){
+function gta(elem){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
@@ -212,7 +212,7 @@ function gta(elem,idx){
     }  
  }
 
-function show(elem,idx){
+function show(elem){
     document.getElementById("card").innerText="";
     for ( let i=0; i<elem.length; i++){
      document.getElementById("card").innerHTML +=`
