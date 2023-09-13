@@ -3,7 +3,7 @@ let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
 let notfound = document.getElementById("notfound");
-let card = document.getElementById("card");
+
 
 let newdata = []
 let accdata = []
@@ -137,7 +137,7 @@ function acc(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in" id="${idx}">
+     <div class="project" data-aos="zoom-in" id="${i}">
    
 
      <div class="image">
@@ -171,13 +171,13 @@ function acc(elem,idx){
     }  
  }
 
-
+console.log(data)
 
 function gta(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<n; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in" id="${idx}">
+     <div class="project" data-aos="zoom-in" id="${i}">
    
 
      <div class="image">
@@ -215,7 +215,7 @@ function show(elem,idx){
     document.getElementById("card").innerText="";
     for ( let i=0; i<elem.length; i++){
      document.getElementById("card").innerHTML +=`
-     <div class="project" data-aos="zoom-in" id="${idx}">
+     <div class="project" data-aos="zoom-in" id="${i}">
    
 
      <div class="image">
@@ -253,8 +253,8 @@ function show(elem,idx){
 load.onclick = () => {
 
     n+=1
-    
-   card.scrollTo += 900;
+    window.location.href="#3"
+
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
@@ -262,8 +262,7 @@ load.onclick = () => {
     }else{
        
         gta(data);
-        card.scrollTop += 3000;
-        console.log(card.scrollTop)
+      
         load.style.display="block"
         notfound.style.display="none"
     }
