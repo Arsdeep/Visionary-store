@@ -390,7 +390,8 @@ p {
     height: 40px;
     width: 100px;
     margin-left: 223px;
-    margin-top: 10px;    border-radius: 50px;
+    margin-top: 0px;   
+     border-radius: 50px;
     transition-duration: .7s;
     text-align: center;
     padding: 7px;
@@ -405,7 +406,7 @@ p {
     height: 40px;
     width: 100px;
     margin-left: 223px;
-    margin-top: 10px;    border-radius: 50px;
+    margin-top: 0px;    border-radius: 50px;
     transition-duration: .7s;
     text-align: center;
     padding: 7px;
