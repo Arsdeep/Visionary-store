@@ -272,8 +272,12 @@ load.onclick = () => {
     if (search.value.replace(/\s+/g, '').length == 0){
         gta(data);
         notfound.style.display="none"
+        accdatas.style.display="none"
+        load.style.display="none"
     }else{
         notfound.style.display="none"
+        accdatas.style.display="none"
+        load.style.display="none"
     
     let text = search.value.toUpperCase();
     console.log(text)
