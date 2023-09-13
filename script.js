@@ -359,10 +359,11 @@ load.onclick = () => {
         load.style.display="none"
         notfound.style.display="none"
         gta(data);
+        gtx();
     }else{
        
         gta(data);
-        gtx()
+        gtx();
         load.style.display="block"
         notfound.style.display="none"
     }
@@ -459,8 +460,10 @@ else {
             accdatas.style.display="none"
             notfound.style.display="none"
             acc(accdata);
+            gtx();
         }else{
             acc(accdata);
+            gtx();
             accdatas.style.display="flex"
         console.log(n)}
     }
