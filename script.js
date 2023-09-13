@@ -3,7 +3,7 @@ let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
 let notfound = document.getElementById("notfound");
-
+let card = document.getElementById("card");
 
 let newdata = []
 let accdata = []
@@ -251,24 +251,24 @@ function show(elem){
  }
 
 
-
+let j= 0
 
  
 load.onclick = () => {
 
     n+=3
     
-    
-  
+    j+=500
+  console.log(j)
 
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
         gta(data);
     }else{
-        
+       
         gta(data);
-        
+        window.scroll(0,`${j}`)
         load.style.display="block"
         notfound.style.display="none"
     }
