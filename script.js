@@ -12,6 +12,8 @@ let data = [
         ammount: '₹ 3,499',
         category: 'evt',
         status: 'ava',
+        tyepeis:"buy",
+        video:"gt.mp4",
         link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
 
     },
@@ -23,6 +25,8 @@ let data = [
         ammount: '₹ 3,499',
         category: 'acc',
         status: 'ava',
+        tyepeis:"join",
+        video:"gt.mp4",
         link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
 
     },
@@ -34,6 +38,8 @@ let data = [
         category: 'acc',
         ammount: '₹ 3,499',
         status: 'sold',
+        tyepeis:"join",
+        video:"gt.mp4",
         link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
 
     },
@@ -45,11 +51,12 @@ let data = [
         category: 'evt',
         ammount: '₹ 3,499',
         status: 'ava',
+        tyepeis:"buy",
+        video:"x.mp4",
         link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
 
     }
 ]
-
 
 
 
@@ -60,13 +67,13 @@ function show(elem){
     for ( let i=0; i<elem.length; i++){
      document.getElementById("card").innerHTML +=`
      <div class="project" data-aos="zoom-in">
+   
+
      <div class="image">
-     
-         <img src="${elem[i].image1}">
-         
-         <img src="${elem[i].image2}">
-         <video id="gt" width="320" height="240" controls>
-         <source src="gt.mp4" type="video/mp4">
+    
+<img src="${elem[i].image1}">
+         <video preload="none" controls onclick="this.play()" poster="${elem[i].image1}" id="video">
+         <source src="${elem[i].video}" type="video/mp4">
          Your browser does not support the video tag.
        </video>
         
@@ -82,14 +89,20 @@ function show(elem){
          <p id="${elem[i].status}"></p>
      </div>
      <h3>₹ 3,499</h3>
-     <div class="icon"
+     <div id="buy">
+     <button class="${elem[i].tyepeis}"
          onclick="window.open('${elem[i].link}')">
-     </div>
+         </div>
+     </button>
      </div>
 
      `
     }  
  }
+
+document.getElementById("full").onclick = ()=> window.location.href=("#video")
+ 
+
 
 
  search.onkeyup = () =>{
