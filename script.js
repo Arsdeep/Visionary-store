@@ -26,7 +26,7 @@ let data = [
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
-        category: 'evt',
+        category: 'srv',
         ammount: '₹ 3,499',
         status: 'ava',
         tyepeis:"buy",
@@ -40,7 +40,7 @@ let data = [
         image1: 'p.jpg',
         image2: 'p3.jpg',
         ammount: '₹ 3,499',
-        category: 'evt',
+        category: 'srv',
         status: 'ava',
         tyepeis:"buy",
         video:"gt.mp4",
@@ -78,7 +78,7 @@ let data = [
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
-        category: 'evt',
+        category: 'srv',
         ammount: '₹ 3,499',
         status: 'ava',
         tyepeis:"buy",
@@ -255,6 +255,7 @@ load.onclick = () => {
    
     if(n>=data.length){
         load.style.display="none"
+        notfound.style.display="none"
         gta(data);
     }else{
         gta(data);
@@ -309,6 +310,7 @@ function category(){
         n=3
         if(n>=data.length){
             load.style.display="none"
+            notfound.style.display="none"   
             show(data);
         }else{
             show(data);
@@ -346,6 +348,7 @@ else {
        
         if(n>=accdata.length){
             accdatas.style.display="none"
+            notfound.style.display="none"
             acc(accdata);
         }else{
             acc(accdata);
@@ -363,6 +366,7 @@ else {
 if(document.getElementById('category').value=="Services"){
     load.style.display="flex"
     accdatas.style.display="none"
+    load.style.display="none"
 let text = "srv";
 
 
@@ -383,6 +387,7 @@ else {
         n=newdata.length
         if(n>=newdata.length){
             load.style.display="none"
+            notfound.style.display="none"
             show(newdata);
         }else{
             show(newdata);
@@ -418,6 +423,7 @@ else {
         n=newdata.length
         if(n>=newdata.length){
             load.style.display="none"
+            notfound.style.display="none"
             show(newdata);
         }else{
             show(newdata);
