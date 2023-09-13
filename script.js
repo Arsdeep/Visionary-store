@@ -16,7 +16,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛BGI POPULARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -27,7 +27,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POPULARITY💠',
+        name: '📛BMI POPULARITY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
