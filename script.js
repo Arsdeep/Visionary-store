@@ -250,7 +250,7 @@ function show(elem,idx){
     }  
  }
 
- let j = 3
+
 
 
  
@@ -258,7 +258,7 @@ load.onclick = () => {
 
     n+=3
     
-    j+=3
+    
   
 
     if(n>=data.length){
@@ -268,7 +268,7 @@ load.onclick = () => {
     }else{
         
         gta(data);
-        window.location.href=`#${j}` 
+        
         load.style.display="block"
         notfound.style.display="none"
     }
