@@ -3,7 +3,7 @@ let search = document.getElementById("search");
 let load = document.getElementById("load");
 let accdatas = document.getElementById("accdata");
 let notfound = document.getElementById("notfound");
-let card = document.getElementById("card");
+let card = document.getElementById("body");
 
 let newdata = []
 let accdata = []
@@ -254,7 +254,7 @@ load.onclick = () => {
 
     n+=1
     
-   window.location.href=`# + ${data.name}`
+   card.scrollTo += 900;
     if(n>=data.length){
         load.style.display="none"
         notfound.style.display="none"
