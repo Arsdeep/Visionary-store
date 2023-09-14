@@ -381,7 +381,7 @@ search.onkeyup = () => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
-    }, 777); // adding delay to remove lag when search 
+    }, 1000); // adding delay to remove lag when search 
 }
 
 // function to search 
