@@ -31,7 +31,10 @@ body {
 
 
 }
-
+#loading-animation{
+    height: 50px;
+    width: 50px;
+}
 h1 {
     font-size: 1.3rem;
     color: white;
@@ -546,6 +549,7 @@ footer img:hover {
     justify-content: center;
     align-items: center;
     display: none;
+
 
 }
 
