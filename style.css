@@ -156,15 +156,17 @@ select:focus {
 
 .price {
     padding: 10px;
+    
     text-align: center;
-    padding-top: 17px;
     display: flex;
+    align-items: baseline;
+   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.price label {
-    margin-top: 17px;
-    margin-left: .3rem;
-}
+
+
 
 
 span {
@@ -630,6 +632,8 @@ footer img:hover {
     }
 
     .price {
+        width: 330px;
+        
         margin: -1rem;
 
     }
