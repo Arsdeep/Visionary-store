@@ -63,8 +63,8 @@ input[type='range'] {
     -webkit-appearance: none;
 }
 .loader {
-    border: 7px solid black; /* Light grey */
-    border-top: 7px solid rgb(0, 255, 0); /* Blue */
+    border: 7px solid black; 
+    border-top: 7px solid rgb(0, 255, 0); 
     border-radius: 50%;
     width: 50px;
     height: 50px;

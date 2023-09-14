@@ -372,12 +372,12 @@ load.onclick = () => {
 // search for data in array with name attribute 
 
 search.onkeypress = () => {
-    card.style.display="none"
-    notfound.style.display="flex"
-    lodingAnimtion.style.display="block"
-    notfoundpng.style.display="none"
-    load.style.display="none"
-    
+    card.style.display = "none"
+    notfound.style.display = "flex"
+    lodingAnimtion.style.display = "block"
+    notfoundpng.style.display = "none"
+    load.style.display = "none"
+
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
@@ -389,10 +389,10 @@ search.onkeypress = () => {
 function searchData() {
     notfound.style.display = "none"
     if (search.value.replace(/\s+/g, '').length == 0) {
-        card.style.display="flex"
-        notfound.style.display="none"
-        lodingAnimtion.style.display="none"
-        notfoundpng.style.display="none"
+        card.style.display = "flex"
+        notfound.style.display = "none"
+        lodingAnimtion.style.display = "none"
+        notfoundpng.style.display = "none"
         notfound.style.display = "none";
         gta(data);
         notfound.style.display = "none"
@@ -419,16 +419,16 @@ function searchData() {
             if (newdata == "") {
                 document.getElementById("card").innerHTML = "";
                 notfound.style.display = "flex";
-                notfoundpng.style.display="block"
-                lodingAnimtion.style.display="none"
+                notfoundpng.style.display = "block"
+                lodingAnimtion.style.display = "none"
             }
             else {
-                card.style.display="flex"
-                notfound.style.display="none"
-                lodingAnimtion.style.display="none"
-                notfoundpng.style.display="none"
+                card.style.display = "flex"
+                notfound.style.display = "none"
+                lodingAnimtion.style.display = "none"
+                notfoundpng.style.display = "none"
                 notfound.style.display = "none";
-               
+
                 show(newdata);
             }
         }
@@ -585,24 +585,33 @@ price.onchange = () => console.log(price.value)
 
 
 // getting high an low price 
-let low ="";
-let high = "";
+let low = 0;
+let high = 0;
+
+price.onclick= () => {
+    finMinMax();
+      // console to see price 
+ 
+    
+}
+
+// function to get Min and Max Price
+
+function finMinMax() {
+    
+    const priceList = data.map((product) => product.ammount);
+    const minPrice = Math.min(...priceList);
+    const maxPrice = Math.max(...priceList);
+    price.min = minPrice;
+    price.max = maxPrice;
+}
+
+finMinMax()
 
 
-data.sort(function (a, b) { return a.ammount - b.ammount });
+price.oninput = (e)=> {console.log(price.value)
 
-
-low = data[0].ammount
-high = data.pop().ammount;
-
-
-console.log(low)
-console.log(high)
-
-price.min = low
-price.max = high
-price.onchange = () => console.log(price.value)
-
+    gta(data.filter((product) => product.ammount <= e.target.value));}
 
 
 
