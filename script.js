@@ -9,6 +9,7 @@ let card = document.getElementById("card"); // card whare data load
 let lodingAnimtion = document.getElementById("loading-animation"); // loading Animtion When Searching data 
 let notfoundpng = document.getElementById("notfoundpng"); // not found image 
 let pricetext = document.getElementById("pricetext");
+let Reset = document.getElementById("Reset");
 let timeoutId; // timoutid 
 
 
@@ -619,6 +620,10 @@ price.oninput = (e)=> {console.log(price.value)
 
 
 
+Reset.onclick = () =>{
+    gta(data)
+    load.style.display="block"
 
+}
 
 
