@@ -631,12 +631,7 @@ footer img:hover {
         margin: 0px;
     }
 
-    .price {
-       width: 100vw;
-        
-        justify-content: center;
-        margin: -1rem;
-    }
+  
 
     #priceRange {
         width: 19rem;

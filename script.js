@@ -613,22 +613,13 @@ finMinMax()
 price.oninput = (e)=> {console.log(price.value)
  
   pricetext.innerText= "₹ " + e.target.value
-  load.style.display="none"
-    gta(data.filter((product) => product.ammount <= e.target.value))
-    onerror(notfound.style.display="flex", lodingAnimtion.style.display="none");
+
+    gta(data.filter((product) => product.ammount <= e.target.value));
    
 }
 
 
 
 
-Reset.onclick = () =>{
-    gta(data)
-    pricetext.innerText="Price"
-    price.value=0;
-    load.style.display="block"
-    accdata.style.display="none"
-
-}
 
 
