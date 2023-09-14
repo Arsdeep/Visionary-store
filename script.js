@@ -610,12 +610,13 @@ finMinMax()
 
 
 price.oninput = (e)=> {console.log(price.value)
-    if (pricetext.innerText==0){
-        gta(data)
-    }
+   
   pricetext.innerText= "₹ " + e.target.value
   load.style.display="none"
-    gta(data.filter((product) => product.ammount <= e.target.value));
+    gta(data.filter((product) => product.ammount <= e.target.value))
+    if (pricetext.innerText==0){
+        gta(data)
+    };
 }
 
 
