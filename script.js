@@ -627,6 +627,7 @@ Reset.onclick = () =>{
     pricetext.innerText="Price"
     price.value=0;
     load.style.display="block"
+    accdata.style.display="none"
 
 }
 
