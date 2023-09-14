@@ -380,7 +380,7 @@ search.onkeypress = () => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
-    }, 333); // adding delay to remove lag when search 
+    }, 444); // adding delay to remove lag when search 
 }
 
 // function to search 
