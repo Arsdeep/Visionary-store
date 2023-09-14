@@ -348,7 +348,8 @@ function gtx(){
     window.scroll(0,`${j}`)
 }
  
-load.onclick = () => {
+load.onclick = database();
+function database(){
 
     n+=3
     
