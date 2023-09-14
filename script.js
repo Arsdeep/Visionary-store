@@ -6,7 +6,11 @@ let load = document.getElementById("load"); // load more button
 let accdatas = document.getElementById("accdata"); // load more button for account data
 let notfound = document.getElementById("notfound"); // not found image
 let card = document.getElementById("card"); // card whare data load
+let lodingAnimtion = document.getElementById("loading-animation"); // loading Animtion When Searching data 
+let notfoundpng = document.getElementById("notfoundpng"); // not found image 
+
 let timeoutId; // timoutid 
+
 
 let newdata = [] // to show data when search new data array
 let accdata = []  // to sore account info i use this data array
@@ -368,10 +372,16 @@ load.onclick = () => {
 // search for data in array with name attribute 
 
 search.onkeyup = () => {
+    card.style.display="none"
+    notfound.style.display="flex"
+    lodingAnimtion.style.display="block"
+    notfoundpng.style.display="none"
+    load.style.display="none"
+    
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
-    }, 1000); // adding delay to remove lag when search 
+    }, 333); // adding delay to remove lag when search 
 }
 
 // function to search 
@@ -379,6 +389,11 @@ search.onkeyup = () => {
 function searchData() {
     notfound.style.display = "none"
     if (search.value.replace(/\s+/g, '').length == 0) {
+        card.style.display="flex"
+        notfound.style.display="none"
+        lodingAnimtion.style.display="none"
+        notfoundpng.style.display="none"
+        notfound.style.display = "none";
         gta(data);
         notfound.style.display = "none"
         accdatas.style.display = "none"
@@ -398,16 +413,22 @@ function searchData() {
             }
         });
         if (this.value == "") {
-
             show(data);
         }
         else {
             if (newdata == "") {
                 document.getElementById("card").innerHTML = "";
                 notfound.style.display = "flex";
+                notfoundpng.style.display="block"
+                lodingAnimtion.style.display="none"
             }
             else {
+                card.style.display="flex"
+                notfound.style.display="none"
+                lodingAnimtion.style.display="none"
+                notfoundpng.style.display="none"
                 notfound.style.display = "none";
+               
                 show(newdata);
             }
         }
