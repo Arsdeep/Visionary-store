@@ -8,8 +8,8 @@ let notfound = document.getElementById("notfound"); // not found image
 let card = document.getElementById("card"); // card whare data load
 let timeoutId; // timoutid 
 
-let newdata = []
-let accdata = []
+let newdata = [] // to show data when search new data array
+let accdata = []  // to sore account info i use this data array
 
 // all data 
 
@@ -371,7 +371,7 @@ search.onkeyup = () => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
-    }, 300); // adding delay to remove lag when search 
+    }, 700); // adding delay to remove lag when search 
 }
 
 // function to search 
