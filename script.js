@@ -384,7 +384,7 @@ load.onclick = () => {
         accdatas.style.display="none"
         load.style.display="none"
     
-    let text = search.value.toUpperCase();
+    let text = search.value();
     console.log(text)
 
     
