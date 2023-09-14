@@ -348,8 +348,7 @@ function gtx(){
     window.scroll(0,`${j}`)
 }
  
-load.onclick = database();
-function database(){
+load.onclick = () => {
 
     n+=3
     
@@ -373,7 +372,7 @@ function database(){
 
 
 
- search.onkeyup = realdatabase();
+ search.onkeyup = () => realdatabase();
 function realdatabase(){
     notfound.style.display="none"
     if (search.value.replace(/\s+/g, '').length == 0){
