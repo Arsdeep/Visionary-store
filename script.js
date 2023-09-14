@@ -370,7 +370,22 @@ load.onclick = () => {
 
 // search for data in array with name attribute 
 
-search.onkeypress = () =>  {
+search.onkeypress = () => {
+    card.style.display = "none"
+    notfound.style.display = "flex"
+    lodingAnimtion.style.display = "block"
+    notfoundpng.style.display = "none"
+    load.style.display = "none"
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+        searchData();
+    }, 333); // adding delay to remove lag when search 
+}
+
+// function to search 
+
+function searchData() {
     notfound.style.display = "none"
     if (search.value.replace(/\s+/g, '').length == 0) {
         card.style.display = "flex"
