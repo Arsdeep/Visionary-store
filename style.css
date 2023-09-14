@@ -40,26 +40,27 @@ h1 {
     height: 100px;
     margin-top: 11vh;
     flex-wrap: wrap;
- 
+
     justify-content: center;
 }
-.cat{
+
+.cat {
     margin-right: 0px;
 }
 
 input[type='range'] {
     border-radius: 8px;
     height: 3px;
-    margin-top:35px;
+    margin-top: 35px;
     outline: none;
     padding-left: -3rem;
     background: white;
     -webkit-appearance: none;
-  }
- 
+}
+
 label {
     color: white;
-    
+
     text-transform: capitalize;
     font-size: 1.5rem;
     font-weight: 600;
@@ -82,14 +83,14 @@ select {
     width: 100px;
 }
 
-.ser{
+.ser {
     padding: 10px;
     display: flex;
     align-items: center;
     padding-top: 13px;
 }
 
-button{
+button {
     height: 30px;
     width: 80px;
     padding: 1px;
@@ -103,7 +104,7 @@ button{
 }
 
 
-input[type="text"]{
+input[type="text"] {
     height: 9px;
     font-size: 1rem;
     width: 300px;
@@ -113,20 +114,21 @@ input[type="text"]{
     background: transparent;
     border: 1px solid white;
     border-radius: 0px;
-    
+
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus {
     border-color: rgb(0, 255, 0);
     outline: none;
-    
+
 }
-select:focus{
+
+select:focus {
     border-color: rgb(0, 255, 0);
     outline: none;
 }
 
-#priceRange{
+#priceRange {
     margin-left: -.1rem;
     margin-top: 33px;
     cursor: pointer;
@@ -134,19 +136,20 @@ select:focus{
     width: 13rem;
 }
 
-.price{
+.price {
     padding: 10px;
     text-align: center;
     padding-top: 17px;
     display: flex;
 }
-.price label{
+
+.price label {
     margin-top: 17px;
     margin-left: .3rem;
 }
 
 
-span{
+span {
     color: white;
 }
 
@@ -157,14 +160,15 @@ span{
     justify-content: space-evenly;
     margin-top: 1vh;
     margin: 0px;
-   border:  1px solid ;
-    
-   
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
 }
 
 
 
-      
+
 .project {
     border-radius: 30px;
     border: 1px solid;
@@ -185,17 +189,18 @@ span{
     scroll-snap-type: x mandatory;
     transition: .7s;
     scrollbar-width: none;
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
     overflow-y: hidden;
     object-fit: cover;
     height: 150px;
     width: 300px;
 
-    
+
 }
+
 .image::-webkit-scrollbar {
     display: none;
-  }
+}
 
 #title {
     color: white;
@@ -205,7 +210,8 @@ span{
     cursor: pointer;
     display: flex;
 }
-span{
+
+span {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -214,11 +220,11 @@ span{
     margin-left: 2rem;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
-#des{
+#des {
     font-weight: 100;
     text-transform: capitalize;
     font-size: .9rem;
@@ -231,22 +237,22 @@ input[type="checkbox"]{
     margin-top: 7px;
 }
 
-.content{
+.content {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.7s;
 }
 
 
-#title label{
+#title label {
     font-weight: 700;
     display: flex;
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .content{
+input[type="checkbox"]:checked+.content {
     max-height: 400px;
-   
+
 }
 
 p {
@@ -254,7 +260,7 @@ p {
     margin-left: 17px;
     border: 1px solid greenyellow;
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  rgb(0, 255, 0);
+    box-shadow: 0px 0px 8px 2px rgb(0, 255, 0);
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -264,7 +270,7 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
 #ava {
@@ -272,7 +278,7 @@ p {
     margin-left: 17px;
     border: 1px solid greenyellow;
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  rgb(0, 255, 0);
+    box-shadow: 0px 0px 8px 2px rgb(0, 255, 0);
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -282,7 +288,7 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
 #acc {
@@ -290,7 +296,7 @@ p {
     margin-left: 17px;
     border: 1px solid greenyellow;
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  rgb(0, 255, 0);
+    box-shadow: 0px 0px 8px 2px rgb(0, 255, 0);
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -300,7 +306,7 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
 #evt {
@@ -308,7 +314,7 @@ p {
     margin-left: 17px;
     border: 1px solid grey;
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 2px rgb(255, 255, 255);
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -318,7 +324,7 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
 #srv {
@@ -326,7 +332,7 @@ p {
     margin-left: 17px;
     border: 1px solid rgb(255, 255, 0);
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  yellow;
+    box-shadow: 0px 0px 8px 2px yellow;
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -336,11 +342,11 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
 
- 
+
 
 
 
@@ -350,7 +356,7 @@ p {
     margin-left: 17px;
     border: 1px solid rgba(255, 255, 255, 0.608);
     max-width: fit-content;
-    box-shadow: 0px 0px 8px 2px  rgb(255, 0, 0);
+    box-shadow: 0px 0px 8px 2px rgb(255, 0, 0);
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 50px;
@@ -360,37 +366,42 @@ p {
     font-weight: 100;
     font-size: 1rem;
     font-weight: 570;
-    
+
 }
 
-#sold::before{
+#sold::before {
     content: "Sold Out";
 }
-#ava::before{
+
+#ava::before {
     content: "Available";
 }
 
-#acc::before{
+#acc::before {
     content: "Account";
     color: white;
 }
-#srv::before{
+
+#srv::before {
     content: "Service";
     color: black;
 }
-#evt::before{
+
+#evt::before {
     content: 'E-Sports';
     color: black;
 }
+
 .tags {
     margin-left: 10px;
     display: flex;
 }
-#buy{
+
+#buy {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-   margin-top: -17px;
+    margin-top: -17px;
 }
 
 .buy {
@@ -398,47 +409,49 @@ p {
     height: 40px;
     width: 100px;
     margin-left: 223px;
-    margin-top: 0px;   
-     border-radius: 50px;
+    margin-top: 0px;
+    border-radius: 50px;
     transition-duration: .7s;
     text-align: center;
     padding: 7px;
-   box-shadow: 0 0 10px rgb(255, 255, 0);
-   font-weight: 900;
-   background-color: yellow;
-   color: black;
-   border-color: rgba(0, 0, 0, 0.816);
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    font-weight: 900;
+    background-color: yellow;
+    color: black;
+    border-color: rgba(0, 0, 0, 0.816);
 }
+
 .join {
     cursor: pointer;
     height: 40px;
     width: 100px;
     margin-left: 223px;
-    margin-top: 0px;    border-radius: 50px;
+    margin-top: 0px;
+    border-radius: 50px;
     transition-duration: .7s;
     text-align: center;
     padding: 7px;
-   box-shadow: 0 0 10px rgb(0, 255, 0);
-   font-weight: 900;
-   background-color: rgb(153, 255, 0);
-   color: black;
-   border-color: rgba(0, 0, 0, 0.816);
+    box-shadow: 0 0 10px rgb(0, 255, 0);
+    font-weight: 900;
+    background-color: rgb(153, 255, 0);
+    color: black;
+    border-color: rgba(0, 0, 0, 0.816);
 }
 
-.buy::after{
+.buy::after {
     content: "Buy Now";
 }
 
-.join::after{
+.join::after {
     content: "Join Now";
 }
 
-h3{
+h3 {
     color: white;
     margin-left: 33px;
     font-size: 1.4rem;
     margin-top: 10px;
- 
+
 }
 
 
@@ -449,9 +462,10 @@ h3{
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03);
-  
+
 
 }
+
 button:hover {
 
     -webkit-transform: scale(1.1);
@@ -506,61 +520,110 @@ footer img:hover {
 
 }
 
-.load{
+.load {
     display: flex;
     justify-content: center;
-margin-top: 40px;
+    margin-top: 40px;
 
-    
+
 }
 
-#load{
-    border: none;
-}
-#accdata{
+#load {
     border: none;
 }
 
-.notfound{
-  
+#accdata {
+    border: none;
+}
+
+.notfound {
+
     height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
-    
+
 }
-.notfound img{
+
+.notfound img {
     opacity: 70%;
     height: 300px;
 }
+
+#swipe{
+   height: 2px;
+   width: 2px;
+ 
+    border-radius: 50px;
+    background: rgba(220, 220, 220, 0.725);
+   z-index: 1;
+    display: flex;
+    padding: .3rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 10rem;
+    margin-top: 9.5rem;
+    position: absolute;
+}
+.wrapper:hover #swiper {
+    transition: 1s;
+    left: 100;
+}
+
+#swiper{
+    height: 2px;
+    width: 2px;
+    z-index: 1;
+  
+     border-radius: 50px;
+     background: rgba(220, 220, 220, 0.725);
+    
+     display: flex;
+     padding: .3rem;
+     color: white;
+     text-decoration: none;
+     margin-left: 11rem;
+     margin-top: 9.5rem;
+     position: absolute;
+     
+ }
+
+ 
+
 @media (max-width:800px) {
-   
+
     .card {
         margin-top: 7vh;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
-    input[type="text"]{
+    input[type="text"] {
         width: 290px;
-       
+
     }
-    select{
+
+    select {
         width: 19.5rem;
         margin: 0px;
     }
-    .price{
+
+    .price {
         margin: -1rem;
-    
+
     }
-    #priceRange{
+
+    #priceRange {
         width: 19rem;
-        
+
         height: .3rem;
-        border-radius: 0px;  
+        border-radius: 0px;
     }
-    .notfound{
-  
+
+    .notfound {
+
         height: 10rem;
     }
-   
+
 }
