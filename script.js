@@ -385,6 +385,7 @@ load.onclick = () => {
         load.style.display="none"
     
     let text = search.value();
+    text.value.toUpperCase()
     console.log(text)
 
     
