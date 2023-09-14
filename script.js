@@ -8,8 +8,6 @@ let notfound = document.getElementById("notfound"); // not found image
 let card = document.getElementById("card"); // card whare data load
 let lodingAnimtion = document.getElementById("loading-animation"); // loading Animtion When Searching data 
 let notfoundpng = document.getElementById("notfoundpng"); // not found image 
-let pricetext = document.getElementById("pricetext");
-let Reset = document.getElementById("Reset");
 let timeoutId; // timoutid 
 
 
@@ -612,7 +610,6 @@ finMinMax()
 
 price.oninput = (e)=> {console.log(price.value)
  
-  pricetext.innerText= "₹ " + e.target.value
 
     gta(data.filter((product) => product.ammount <= e.target.value));
    
