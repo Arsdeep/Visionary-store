@@ -119,6 +119,7 @@ input[type="text"]{
 input[type="text"]:focus{
     border-color: rgb(0, 255, 0);
     outline: none;
+    text-transform: uppercase;
     
 }
 select:focus{
