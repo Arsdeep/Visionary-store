@@ -373,7 +373,8 @@ function database(){
 
 
 
- search.onkeyup = () =>{
+ search.onkeyup = realdatabase();
+function realdatabase(){
     notfound.style.display="none"
     if (search.value.replace(/\s+/g, '').length == 0){
         gta(data);
