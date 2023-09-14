@@ -622,6 +622,8 @@ price.oninput = (e)=> {console.log(price.value)
 
 Reset.onclick = () =>{
     gta(data)
+    pricetext.innerText="Price"
+    price.value=0;
     load.style.display="block"
 
 }
