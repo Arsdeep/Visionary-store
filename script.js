@@ -602,7 +602,7 @@ function finMinMax() {
     const priceList = data.map((product) => product.ammount);
     const minPrice = Math.min(...priceList);
     const maxPrice = Math.max(...priceList);
-    price.min = 0;
+    price.min = minPrice;
     price.max = maxPrice;
 }
 
