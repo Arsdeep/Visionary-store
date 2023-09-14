@@ -610,7 +610,7 @@ finMinMax()
 
 
 price.oninput = (e)=> {console.log(price.value)
-    if (price.value=0){
+    if (pricetext.innerText==0){
         gta(data)
     }
   pricetext.innerText= "₹ " + e.target.value
