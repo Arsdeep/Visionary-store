@@ -101,7 +101,7 @@ let data = [
 
     },
     {
-        name: '📛BGMI POARITY💠',
+        name: '📛 GT💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -114,7 +114,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛F GY💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -127,7 +127,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛M PRO💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -140,7 +140,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛GX TR💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -153,7 +153,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛HA LON💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -166,7 +166,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛N HT💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -179,7 +179,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛J POL💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -192,7 +192,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛HYH DGHHG💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
@@ -205,7 +205,7 @@ let data = [
 
     },
     {
-        name: '📛BGI POPULAITY💠',
+        name: '📛PPOJ STYRF💠',
         description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
         image1: 'p.jpg',
         image2: 'p3.jpg',
