@@ -632,7 +632,9 @@ footer img:hover {
     }
 
     .price {
-        width: 330px;
+        width:  100vw;
+        
+        border: 1px solid white;
         margin: -1rem;
     }
 
