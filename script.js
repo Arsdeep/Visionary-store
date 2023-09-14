@@ -371,7 +371,7 @@ load.onclick = () => {
 
 // search for data in array with name attribute 
 
-search.onkeyup = () => {
+search.onkeypress = () => {
     card.style.display="none"
     notfound.style.display="flex"
     lodingAnimtion.style.display="block"
