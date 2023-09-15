@@ -373,7 +373,7 @@ load.onclick = () => {
 
 function Searchingdata(m){
    
- m.blur
+ m.blur()
 
     card.style.display = "none"
     notfound.style.display = "flex"
