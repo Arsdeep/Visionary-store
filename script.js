@@ -259,13 +259,7 @@ function acc(elem) {
 
 // data for page 
 function gta(elem) {
-            window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata() 
 
- }
-
-}
     
  
     document.getElementById("card").innerText = "";
@@ -355,7 +349,13 @@ function gtx() {
 }
 
 
+            window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata() 
 
+ }
+
+}
 
 function loadalldata() {
 
