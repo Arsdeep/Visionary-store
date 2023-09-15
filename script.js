@@ -220,6 +220,11 @@ gta(data); // data to show on page
 // data for account
 
 function acc(elem) {
+     if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata() 
+
+ }
+    
     document.getElementById("card").innerText = "";
     for (let i = 0; i < n; i++) {
         document.getElementById("card").innerHTML += `
@@ -258,10 +263,7 @@ function acc(elem) {
 }
 
 // data for page 
-function gta(elem) {
-
-    
- 
+function gta(elem) { 
     document.getElementById("card").innerText = "";
     for (let i = 0; i < n; i++) {
         document.getElementById("card").innerHTML += `
@@ -349,7 +351,8 @@ function gtx() {
 }
 
 
-
+     
+ 
 
 function loadalldata() {
 
@@ -468,17 +471,9 @@ function category() {
         gta(data);
     }
 
-    else if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
+     if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
-                                
-        window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata() 
-
- }
-
-}     
-        
+       
         let text = "acc";
         load.style.display = "none"
 
@@ -525,7 +520,7 @@ function category() {
         }
     }
 
-    else if (document.getElementById('category').value == "Services") {   // FOR SERVICES
+     if (document.getElementById('category').value == "Services") {   // FOR SERVICES
         load.style.display = "flex"
         accdatas.style.display = "none"
         load.style.display = "none"
@@ -562,7 +557,7 @@ function category() {
         }
     }
 
-    else if (document.getElementById('category').value == "E-Sports") {    // FOR E-SPORTS
+     if (document.getElementById('category').value == "E-Sports") {    // FOR E-SPORTS
         load.style.display = "flex"
         accdatas.style.display = "none"
         let text = "evt"
