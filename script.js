@@ -371,9 +371,9 @@ load.onclick = () => {
 // search for data in array with name attribute 
 
 
-function Searchingdata(){
+function Searchingdata(m){
    
-
+ m.blur
 
     card.style.display = "none"
     notfound.style.display = "flex"
