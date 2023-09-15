@@ -480,7 +480,7 @@ function category() {
             }
         });
         if (this.value == "") {
-            show(data);
+            
         }
         else {
             if (newdata == "") {
@@ -503,7 +503,7 @@ window.onscroll = () => {
 
                     if (n >= accdata.length) {
                         
-                     return
+                     
                         
                     } else {
 
