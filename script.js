@@ -468,7 +468,7 @@ function category() {
         gta(data);
     }
 
-    if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
+    else if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
                                 
         window.onscroll = function() {
@@ -525,7 +525,7 @@ function category() {
         }
     }
 
-    if (document.getElementById('category').value == "Services") {   // FOR SERVICES
+    else if (document.getElementById('category').value == "Services") {   // FOR SERVICES
         load.style.display = "flex"
         accdatas.style.display = "none"
         load.style.display = "none"
@@ -562,7 +562,7 @@ function category() {
         }
     }
 
-    if (document.getElementById('category').value == "E-Sports") {    // FOR E-SPORTS
+    else if (document.getElementById('category').value == "E-Sports") {    // FOR E-SPORTS
         load.style.display = "flex"
         accdatas.style.display = "none"
         let text = "evt"
