@@ -359,8 +359,7 @@ function loadalldata() {
     console.log(j)
 
     if (n >= data.length) {
-        load.style.display = "none"
-        notfound.style.display = "none"
+        console.log("end")
         
     } else {
 
@@ -474,7 +473,7 @@ function category() {
   loadmoredata() 
 
  }
-if (n >= accdata.length){}
+
 }     
         
         let text = "acc";
@@ -505,7 +504,7 @@ if (n >= accdata.length){}
 
                     if (n >= accdata.length) {
                         
-                     
+                     console.log("end")
                         
                     } else {
 
