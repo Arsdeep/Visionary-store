@@ -219,12 +219,7 @@ gta(data); // data to show on page
 
 // data for account
 
-function acc(elem) {
-     if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata() 
-
- }
-    
+function acc(elem) {    
     document.getElementById("card").innerText = "";
     for (let i = 0; i < n; i++) {
         document.getElementById("card").innerHTML += `
@@ -455,10 +450,7 @@ document.getElementById('category').onchange = () => {
 function category() {
 
     if (document.getElementById('category').value == "All") {   // FOR ALL 
-                                 
-       
-        
-       
+                                  
       
         n = 3
         if (n >= data.length) {
@@ -473,7 +465,10 @@ function category() {
 
      if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
-       
+     if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata() 
+
+ }       
         let text = "acc";
         load.style.display = "none"
 
