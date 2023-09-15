@@ -370,7 +370,7 @@ load.onclick = () => {
 
 // search for data in array with name attribute 
 
-search.onkeypress = () => {
+search.onkeydown = () => {
     card.style.display = "none"
     notfound.style.display = "flex"
     lodingAnimtion.style.display = "block"
