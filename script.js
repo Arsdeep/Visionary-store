@@ -453,7 +453,7 @@ function category() {
                                   
   window.onscroll = () => {
  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  
+  loadalldata()
  }
 }    
         n = 3
