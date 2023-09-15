@@ -349,13 +349,7 @@ function gtx() {
 }
 
 
-            window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata() 
 
- }
-
-}
 
 function loadalldata() {
 
