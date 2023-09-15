@@ -451,7 +451,11 @@ function category() {
 
     if (document.getElementById('category').value == "All") {   // FOR ALL 
                                   
-      
+  window.onscroll = () => {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  
+ }
+}    
         n = 3
         if (n >= data.length) {
             
