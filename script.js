@@ -347,11 +347,11 @@ function gtx() {
 
 window.onscroll = function() {
  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata();
+  loadmoredata()
  }
 }
 
-function loadmoredata() {
+function wuywwh() {
 
     n += 3
 
@@ -491,7 +491,7 @@ function category() {
                 console.log(accdata.length)
 
                 accdatas.style.display = "flex"
-                accdatas.onclick = () => {
+                function loadmoredata() {
 
                     n += 3
 
