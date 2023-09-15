@@ -449,24 +449,20 @@ function category() {
 
     if (document.getElementById('category').value == "All") {   // FOR ALL 
                                  
-        window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  
-lodaccdat()
- }      
+       
         
        
-        function lodaccdat(){
+      
         n = 3
         if (n >= data.length) {
-            load.style.display = "none"
+            
             notfound.style.display = "none"
         } else {
-            load.style.display = "flex"
+            
             console.log(n)
         }
         gta(data);
-    }}
+    }
 
     if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
