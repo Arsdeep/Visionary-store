@@ -507,7 +507,7 @@ function category() {
 
                     if (n >= accdata.length) {
                         
-                     console.log("end")
+                     return
                         
                     } else {
 
