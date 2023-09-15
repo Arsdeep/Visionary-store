@@ -8,209 +8,17 @@ let notfound = document.getElementById("notfound"); // not found image
 let card = document.getElementById("card"); // card whare data load
 let lodingAnimtion = document.getElementById("loading-animation"); // loading Animtion When Searching data 
 let notfoundpng = document.getElementById("notfoundpng"); // not found image 
+let searchxx = document.getElementById("search"); // not found image 
+
 let timeoutId; // timoutid 
 
 
-let newdata = [] // to show data when search new data array
-let accdata = []  // to sore account info i use this data array
 
-// all data 
-
-let data = [
-    {
-        name: '📛MI POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'evt',
-        ammount: '4000',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛I POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'srv',
-        ammount: '4000',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛GGMI POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        ammount: '4000',
-        category: 'srv',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/gt.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        ammount: '4000',
-        category: 'acc',
-        status: 'ava',
-        tyepeis: "join",
-        video: "video/gt.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BMI POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p4.jpg',
-        category: 'acc',
-        ammount: '40',
-        status: 'sold',
-        tyepeis: "join",
-        video: "video/gt.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛 POPULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'srv',
-        ammount: '40',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGMI PULARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '40',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGMI POARITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
-    },
-    {
-        name: '📛BGI POPULAITY💠',
-        description: '✅GIFTING THROUGH UID<br>✅72 HRS REQUIRED FOR GIFTING',
-        image1: 'images/p.jpg',
-        category: 'acc',
-        ammount: '3499',
-        status: 'ava',
-        tyepeis: "buy",
-        video: "video/x.mp4",
-        link: 'https://wa.me/918928093361?text=%F0%9F%93%9BBGMI%20POPULARITY%F0%9F%92%A0',
-
+searchxx.onkeyup = (e) =>{
+    if(e.keyCode===13){
+        Searchingdata()
     }
-]
-
+}
 
 
 let n = 3;
@@ -385,7 +193,7 @@ function Searchingdata(){
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => {
         searchData();
-    }, 333); }// adding delay to remove lag when search 
+    }, 0); }// adding delay to remove lag when search 
 
 
 // function to search 
