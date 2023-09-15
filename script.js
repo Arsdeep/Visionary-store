@@ -501,7 +501,9 @@ function category() {
                         accdatas.style.display = "none"
                         notfound.style.display = "none"
                         acc(accdata);
+                        
                         gtx();
+                        return
                     } else {
                         acc(accdata);
                         gtx();
