@@ -466,6 +466,13 @@ function category() {
 
     if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
+                                
+        window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  accdatas.click()
+ }
+}     
+        
         let text = "acc";
         load.style.display = "none"
 
@@ -500,12 +507,7 @@ function category() {
                         gtx();
                         
                     } else {
-                               
-        window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata()
- }
-}
+
                         acc(accdata);
                         gtx();
                         accdatas.style.display = "flex"
