@@ -345,11 +345,7 @@ function gtx() {
     window.scroll(0, `${j}`)
 }
 
-window.onscroll = function() {
- if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata()
- }
-}
+
 
 function wuywwh() {
 
@@ -469,6 +465,12 @@ function category() {
     }
 
     if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
+        
+        window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata()
+ }
+}
         let text = "acc";
         load.style.display = "none"
 
