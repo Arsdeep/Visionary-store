@@ -345,9 +345,13 @@ function gtx() {
     window.scroll(0, `${j}`)
 }
 
+        window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadalldata() 
 
+ }
 
-function wuywwh() {
+function loadalldata() {
 
     n += 3
 
@@ -357,14 +361,12 @@ function wuywwh() {
     if (n >= data.length) {
         load.style.display = "none"
         notfound.style.display = "none"
-        gta(data);
-        gtx();
+        
     } else {
 
         gta(data);
         gtx();
-        load.style.display = "block"
-        notfound.style.display = "none"
+        
     }
 }
 
@@ -502,15 +504,14 @@ if (n >= accdata.length){}
                     n += 3
 
                     if (n >= accdata.length) {
-                        accdatas.style.display = "none"
-                        notfound.style.display = "none"
+                        
                      
                         
                     } else {
 
                         acc(accdata);
                         gtx();
-                        accdatas.style.display = "flex"
+                        
                         console.log(n)
                     }
                 }
