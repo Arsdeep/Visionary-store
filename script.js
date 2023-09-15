@@ -504,9 +504,7 @@ if (n >= accdata.length){}
                     if (n >= accdata.length) {
                         accdatas.style.display = "none"
                         notfound.style.display = "none"
-                        acc(accdata);
-                        
-                        gtx();
+                     
                         
                     } else {
 
