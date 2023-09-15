@@ -370,8 +370,12 @@ load.onclick = () => {
 
 // search for data in array with name attribute 
 
+
 search.onkeyup = (m) => {
     if (m.keyCode===13){
+
+search.onkeydown = () => {
+
     card.style.display = "none"
     notfound.style.display = "flex"
     lodingAnimtion.style.display = "block"
@@ -382,7 +386,7 @@ search.onkeyup = (m) => {
     timeoutId = setTimeout(() => {
         searchData();
     }, 333); }// adding delay to remove lag when search 
-}
+}}
 
 // function to search 
 
