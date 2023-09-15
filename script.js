@@ -448,8 +448,15 @@ document.getElementById('category').onchange = () => {
 function category() {
 
     if (document.getElementById('category').value == "All") {   // FOR ALL 
-        load.style.display = "flex"
-        accdatas.style.display = "none"
+                                 
+        window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  
+lodaccdat()
+ }      
+        
+       
+        function lodaccdat(){
         n = 3
         if (n >= data.length) {
             load.style.display = "none"
@@ -459,7 +466,7 @@ function category() {
             console.log(n)
         }
         gta(data);
-    }
+    }}
 
     if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
@@ -493,7 +500,7 @@ function category() {
                 accdata = newdata
                 console.log(accdata.length)
 
-                accdatas.style.display = "flex"
+                
                 function loadmoredata() {
 
                     n += 3
