@@ -259,6 +259,12 @@ function acc(elem) {
 
 // data for page 
 function gta(elem) {
+    
+           window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  
+lodaccdat()
+ }
     document.getElementById("card").innerText = "";
     for (let i = 0; i < n; i++) {
         document.getElementById("card").innerHTML += `
