@@ -465,10 +465,8 @@ function category() {
 
      if (document.getElementById('category').value == "Accounts") {   // FOR ACCOUNT
  
-     if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-  loadmoredata() 
 
- }       
+           
         let text = "acc";
         load.style.display = "none"
 
@@ -489,7 +487,11 @@ function category() {
                 notfound.style.display = "none";
                 accdata = newdata
                 console.log(accdata.length)
-
+window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata()
+ }
+}
                 
                 function loadmoredata() {
 
