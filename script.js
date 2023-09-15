@@ -487,7 +487,7 @@ function category() {
                 notfound.style.display = "none";
                 accdata = newdata
                 console.log(accdata.length)
-window.onscroll = function() {
+card.onscroll = () => {
  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
   loadmoredata()
  }
