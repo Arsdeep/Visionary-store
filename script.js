@@ -345,7 +345,13 @@ function gtx() {
     window.scroll(0, `${j}`)
 }
 
-load.onclick = () => {
+window.onscroll = function() {
+ if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+  loadmoredata();
+ }
+}
+
+function loadmoredata() {
 
     n += 3
 
