@@ -122,8 +122,8 @@ button {
 }
 
 
-input[type="text"] {
-    height: 9px;
+input[type="search"] {
+    height: 30.2px;
     font-size: 1rem;
     width: 300px;
     border: none;
@@ -135,7 +135,7 @@ input[type="text"] {
 
 }
 
-input[type="text"]:focus {
+input[type="search"]:focus {
     border-color: rgb(0, 255, 0);
     outline: none;
 
@@ -621,8 +621,8 @@ footer img:hover {
         padding-right: 0rem;
     }
 
-    input[type="text"] {
-        width: 290px;
+    input[type="search"] {
+        width: 310px;
 
     }
 
